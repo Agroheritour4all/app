@@ -1,0 +1,15 @@
+{
+  "short_name": "Agroheritour4all",
+  "name": "Agroheritour4all",
+  "icons": [
+    {
+      "src": "/public/favicon.svg",
+      "type": "image/svg",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
