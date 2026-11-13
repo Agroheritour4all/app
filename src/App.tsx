@@ -1,4 +1,4 @@
-import logo from "./assets/AgroLogo.small.png"
+// import logo from "./assets/AgroLogo.small.png"
 import attribution from "./assets/detour-EE.small.png"
 import './App.css'
 import MainMap from "./MainMap"

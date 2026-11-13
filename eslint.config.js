@@ -21,7 +21,7 @@ export default defineConfig([
     rules: {
       // Note: you must disable the base rule as it can report incorrect errors
       "no-unused-vars": "warn",
-      "@typescript-eslint/no-unused-vars": "warning"
+      "@typescript-eslint/no-unused-vars": "warn"
     }
   },
 ])

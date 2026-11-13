@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 
 // PWA (Manual) ❌ DISABLED
-if ( false && 'serviceWorker' in navigator) {
+if ( 'serviceWorker' in navigator) {
 
   console.log("Service Worker available");
 
