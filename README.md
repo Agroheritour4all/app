@@ -2,4 +2,6 @@
 
 ---
 
-## DEVELOPMENT
+<!-- ## DEVELOPMENT -->
+
+![](./src/assets/detour-EE.png)
