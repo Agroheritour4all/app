@@ -37,6 +37,7 @@ const markers: Markers = [
   }
 ];
 
+// eslint-disable-next-line
 function GeoLocationCenter() {
 
   const location = useGeoLocation();
@@ -51,6 +52,8 @@ const osmTiles = {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright',
   url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 }
+
+// eslint-disable-next-line
 const gmapsTiles = {
   attribution: "Google Maps",
   maxZoom: 20,
