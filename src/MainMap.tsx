@@ -10,10 +10,11 @@ import {
   // point, 
   type LatLngTuple
 } from "leaflet";
+import markerIcon from "./assets/marker-icon.png";
 
 // create custom icon
 const customIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/512/447/447031.png",
+  iconUrl: markerIcon,
   // iconUrl: require("./icons/placeholder.png"),
   iconSize: [38, 38] // size of the icon
 });
