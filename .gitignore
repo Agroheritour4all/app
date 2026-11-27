@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 _ASSETS/
+
+# Local Netlify folder
+.netlify
