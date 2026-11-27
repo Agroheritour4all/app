@@ -1,13 +1,4 @@
-#map-container {
-  padding: 0 1rem 1rem 1rem;
-}
-
-.hero h1 {
-  font-weight: 100;
-  font-size: 2.5rem;
-}
-
-#center {
+#app {
 
   display: flex;
   flex-direction: column;
@@ -18,9 +9,14 @@
 
 }
 
-#hero {
-  height: 10vh;
+/* UPPER */
+
+.hero h1 {
+  font-weight: 100;
+  font-size: 2.5rem;
 }
+
+/* MIDDLE */
 
 #map-container {
   flex-grow: 1;
@@ -30,6 +26,8 @@
 .leaflet-container {
   box-shadow: 0 0 32px #00000088;
 }
+
+/* LOWER */
 
 #attribution {
   height: 8vh;

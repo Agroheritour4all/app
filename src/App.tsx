@@ -8,7 +8,7 @@ function App() {
   return (
     <>
 
-      <section id="center">
+      <section id="app">
 
         {/* LOGO */}
         <div className="hero">
