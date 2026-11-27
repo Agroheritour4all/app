@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap, GeoJSON } from "react-l
 // import MarkerClusterGroup from "react-leaflet-cluster";
 import useGeoLocation from "./useGeoLocation";
 import {
+  CircleMarker,
   Icon,
   // divIcon,
   // point, 
@@ -106,6 +107,7 @@ const geoJSON: GeoJSON.GeoJSON = {
     {
       "type": "Feature",
       "properties": {
+        "popupMsg": "Pop-up message for Point 1",
         "Point 1": "Value for Point 1"
       },
       "geometry": {
@@ -119,6 +121,7 @@ const geoJSON: GeoJSON.GeoJSON = {
     {
       "type": "Feature",
       "properties": {
+        "popupMsg": "Pop-up message for Point 2",
         "Point 2": "Value for Point 2"
       },
       "geometry": {
@@ -148,7 +151,19 @@ export default function Map() {
 
       {/* <GeoLocationCenter /> */}
 
-      <GeoJSON data={geoJSON} />
+      <GeoJSON
+        // pointToLayer={(feature, latlng) => {
+        //   const circleMarkerOptions = { radius: 10, color: "black", fillColor: "orange" };
+        //   return new CircleMarker(latlng, circleMarkerOptions);
+        // }}
+        onEachFeature={(feature, layer) => {
+          const { popupMsg } = feature.properties;
+          if (popupMsg) {
+            layer.bindPopup(popupMsg);
+          }
+
+        }}
+        data={geoJSON} />
 
       {markers.map((marker) => (
         <Marker key={marker.id} position={marker.geocode} icon={customIcon}>
